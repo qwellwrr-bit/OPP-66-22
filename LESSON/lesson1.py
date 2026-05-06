@@ -8,6 +8,7 @@ class Hero:
     def action(self):
         return "Just method!"
 
+
 # объект/эземпляр на основе класса
 kirito = Hero(name='Kirito', lvl=10)
 asuna = Hero('Asuna', 100, 1000)
