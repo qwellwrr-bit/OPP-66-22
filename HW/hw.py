@@ -19,7 +19,7 @@ class Hero:
 
     def rest(self):
         print(f"{self.name} отдыхает ...")
-        self.strengthро += 1
+        self.strength += 1
 
 aneko = Hero(name="Aneko", level=8, health=100, strength=100)
 olesia = Hero(name="Olesia", level=5, health=90, strength=77)

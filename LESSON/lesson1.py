@@ -1,31 +1,36 @@
+def test():
+    return 'Def'
+
 class Hero:
-    #конструктор класса
-    def __init__(self, name='John Doe', lvl= 0, hp=100):
-        self.name = name
-        self.lvl = lvl
-        self.hp = hp
- #методы класса
+    # Конструктор класса
+    def __init__(self, name, lvl, hp):
+        # Атрибуты класса
+        self.name_1 = name
+        self.lvl_1 = lvl
+        self.hp_1 = hp
+    # Методы класса
     def action(self):
-        return "Just method!"
+        return f"{self.name_1} base action!!"
+# объект\экземпляр на основе класса
+kirito_hero = Hero("Kirito", 100, 1000)
+asuna = Hero("Asuna", 101, 1001)
 
-
-# объект/эземпляр на основе класса
-kirito = Hero(name='Kirito', lvl=10)
-asuna = Hero('Asuna', 100, 1000)
-print(kirito.action())
+print(kirito_hero.action())
 print(asuna.action())
-# class MyInt:
-#     def __init__(self, value):
-#         self.value = value
+
+
+class MyInt:
+
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return str(self.value)
 #
-#     def __str__(self):
-#         return str(self.value)
 # my_int = MyInt(123)
 # py_int = 123
-# my_list = list([1, 2, 3,45])
-# print(my_int)
-# print(py_int)
-# print(my_list)
-
-# print(my_int)
-# print(kirito)
+# my_list = list([1,2,3,45,])
+# my_tuple = tuple([1,2,3,45,])
+# #
+# print(my_tuple)
+# print(my_list.sort())
