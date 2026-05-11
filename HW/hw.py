@@ -1,4 +1,4 @@
-from os import name
+
 
 
 class Hero:

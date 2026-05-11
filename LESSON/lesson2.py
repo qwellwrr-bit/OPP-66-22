@@ -11,11 +11,10 @@
 #
 #
 # # Дочерний класс
-# class MageHero(Hero):
-#
-#     def __init__(self, name, hp, lvl, mp):
-#         super().__init__(name, hp, lvl)
-#         self.mp = mp
+class MageHero("Hero"):
+    def __init__(self, name, hp, lvl, mp):
+        super().__init__(name, hp, lvl)
+        self.mp = mp
 #
 #     def cast_spell(self):
 #         print('Огненный щар!!')
