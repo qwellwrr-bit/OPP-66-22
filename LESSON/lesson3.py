@@ -26,33 +26,33 @@
 from abc import ABC, abstractmethod
 #
 # #Абстрактный класс
-# class Animal(ABC):
-#     @abstractmethod
-#     def make_sound(self):
-#         pass
-#     @abstractmethod
-#     def action(self):
-#         pass
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+    @abstractmethod
+    def action(self):
+        pass
+
+
+class Dog(Animal):
+
+    def action(self):
+        print("Gaf Gaf")
+
+    def make_sound(self):
+        print("Step")
+
+class Duck(Animal):
+    def action(self):
+        print("Krya Krya ")
+
+    def make_sound(self):
+        print("Step")
+
 #
-#
-# class Dog(Animal):
-#
-#     def action(self):
-#         print("Gaf Gaf")
-#
-#     def make_sound(self):
-#         print("Step")
-#
-# class Duck(Animal):
-#     def action(self):
-#         print("Krya Krya ")
-#
-#     def make_sound(self):
-#         print("Step")
-#
-#
-# guffi = Dog()
-# donald = Duck()
+guffi = Dog()
+donald = Duck()
 
 class SendOTP(ABC):
     @abstractmethod

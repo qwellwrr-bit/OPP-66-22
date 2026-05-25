@@ -39,7 +39,7 @@ money2: Money = Money(5000, "KGS")
 
 result1 = money1 + money2
 result2 = money1 - money2
-result3 = money1 * 5
+result3 = money2 * 5
 result4 = money1 / 6
 
 print(result1)
